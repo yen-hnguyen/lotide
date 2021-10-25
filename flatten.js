@@ -42,7 +42,6 @@ const flatten = (array) => {
       flattenArray.push(item);
     }
   }
-  console.log(flattenArray);
   return flattenArray;
 };
 

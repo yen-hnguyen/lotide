@@ -1,4 +1,4 @@
-const countLetters = function (sentence) {
+const countLetters = function(sentence) {
   const result = {};
   sentence = sentence.toLowerCase();
   for (let letter of sentence) {

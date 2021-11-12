@@ -1,6 +1,5 @@
 const assertObjectsEqual = require('../assertObjectsEqual');
 
-// Primitives As Values (Test)
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 assertObjectsEqual(ab, ba);
@@ -10,9 +9,7 @@ assertObjectsEqual(ab, abc);
 
 const cba = { c: "3", a: "1", b: "4" };
 assertObjectsEqual(cba, abc);
-assertObjectsEqual(abc, cba);
 
-// Arrays As Values (Test)
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 assertObjectsEqual(cd, dc);

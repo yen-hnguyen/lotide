@@ -13,13 +13,13 @@ describe('#countOnly', () => {
       "Salima",
       "Fang",
       "Joe",
-  ];
+    ];
     const result1 = countOnly(firstNames, {
       Jason: true,
       Karima: true,
       Fang: true,
       Agouhanna: false,
-  });
+    });
     assert.strictEqual(result1["Jason"], 1);
   });
   it('return undefined for the firstNames array and results1 object to count Karima: true', () => {
@@ -33,13 +33,13 @@ describe('#countOnly', () => {
       "Salima",
       "Fang",
       "Joe",
-  ];
+    ];
     const result1 = countOnly(firstNames, {
       Jason: true,
       Karima: true,
       Fang: true,
       Agouhanna: false,
-  });
+    });
     assert.strictEqual(result1["Karima"], undefined);
   });
   it('return {Fang: 2} for the firstNames array and results1 object to count Fang: true', () => {
@@ -53,13 +53,13 @@ describe('#countOnly', () => {
       "Salima",
       "Fang",
       "Joe",
-  ];
+    ];
     const result1 = countOnly(firstNames, {
       Jason: true,
       Karima: true,
       Fang: true,
       Agouhanna: false,
-  });
+    });
     assert.strictEqual(result1["Fang"], 2);
   });
   it('return undefined for the firstNames array and results1 object to count Agouhanna: false', () => {
@@ -73,15 +73,14 @@ describe('#countOnly', () => {
       "Salima",
       "Fang",
       "Joe",
-  ];
+    ];
     const result1 = countOnly(firstNames, {
       Jason: true,
       Karima: true,
       Fang: true,
       Agouhanna: false,
-  });
+    });
     assert.strictEqual(result1["Agouhanna"], undefined);
   });
 });
-
 
